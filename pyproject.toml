@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "thomasbot"
+version = "0.1.0"
+description = "Self-bot chat assistant for Telegram"
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+telethon = "^1.27.0"
+ffmpeg = "^1.4"
+ffmpy = "^0.3.0"
+bs4 = "^0.0.1"
+requests = "^2.28.2"
+yt-dlp = "^2023.3.4"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
