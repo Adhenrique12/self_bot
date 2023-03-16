@@ -1,6 +1,7 @@
 
 *.json
 *.toml
+!pyproject.toml
 *.session
 .
 # Byte-compiled / optimized / DLL files
