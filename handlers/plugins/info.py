@@ -19,7 +19,7 @@ def get_info(msg, msg_id) -> str:
     return info 
 
 
-@events.register(events.NewMessage(outgoing=True, pattern=r'\.info'))
+@events.register(events.NewMessage(outgoing=True, pattern=r'.info'))
 async def cmd(event):
     
     client =  event.client

@@ -9,12 +9,13 @@ def soup(site_link: str)-> str:
     ''' This funtion return a link of the video.'''
     
     link_video = site_link
-    result = requests.get(link_video)
-    soup = BeautifulSoup(result.text, "html.parser")
     
     motherless = link_video[8:18]     #https://motherless.com/
     hotleak = link_video[8:15]        #https://hotleak.vip/
     links = [motherless,hotleak]
+
+    result = requests.get(link_video)
+    soup = BeautifulSoup(result.text, "html.parser")
     
     print(link_video)
     
