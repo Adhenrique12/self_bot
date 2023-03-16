@@ -6,6 +6,17 @@
   </a>
 
   <h3 align="center">Project Description</h3>
+  <p align=center > 
+  <br />
+  The project is a self bot written in Python that provides a user-friendly interface for creating modules to perform various tasks. With this bot, users can easily create modules in a modular style to accomplish a variety of tasks, including but not limited to automated messaging, scraping data from websites, and automating routine tasks.
+
+One of the key features of this project is its modular design, which allows users to create custom modules for specific tasks. This modular design means that each module can be developed and tested independently, making it easier to maintain and modify the bot over time.
+
+The self bot is designed to be highly flexible and customizable, with users able to create modules that fit their specific needs. Additionally, the bot is designed to be user-friendly, with clear documentation and examples provided to help users get started quickly.
+
+Overall, the project is a powerful tool for anyone looking to automate routine tasks and streamline their workflows. Its modular design and flexibility make it an excellent choice for a wide range of use cases, while its user-friendly interface ensures that even those with limited programming experience can get started quickly and easily.
+  </p>
+  
   <p align="center">
     <br />
     <a href="https://github.com/RaphGL/ProjectName"><strong>Explore the docs »</strong></a>
@@ -47,7 +58,7 @@ Description about what the project is.
 
 ### Built With
 
-- [Python] (https://www.python.org/)
+- [Python](https://www.python.org/)
 - [Telethon](https://docs.telethon.dev/)
 - [BeautifulSoup4](https://pypi.org/project/beautifulsoup4/)
 
