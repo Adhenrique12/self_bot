@@ -1,16 +1,18 @@
-from handlers.tools import import_modules as ip
-
+from handlers.tools import load_plugins as lp
 from handlers.plugins import ALL_MODULES as USER_MODULES
-
-from handlers import client
-
-client = client.client
+from telethon import TelegramClient
+import toml
 
 
-def task1():
+toml_config = toml.load("config.toml")
+client = TelegramClient(
+    "bot", toml_config["user_api"]["id"], toml_config["user_api"]["hash"])
+
+
+def main():
     with client:
         client.start()
-        ip.import_modules(USER_MODULES, client)
+        lp.load_plugins(USER_MODULES, client)
         print("User Bot Marques started.")
         client.run_until_disconnected()
 
@@ -19,6 +21,6 @@ if __name__ == "__main__":
     print("Starting...")
 
     try:
-        task1()
+        main()
     except KeyboardInterrupt:
         print("Client terminated.")
