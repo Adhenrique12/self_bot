@@ -5,7 +5,7 @@ import time
 convert = convert_size.convert_size
 
 
-def get_info(msg, msg_id) -> str:
+def get_info(msg: str, msg_id: int) -> str:
     media = msg.media.document
     media_size = convert(media.size)
     media_type = media.mime_type
