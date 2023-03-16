@@ -1,8 +1,8 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/Adhenrique12/downloader_bot/blob/master/project_assets/logo.png">
-    <img src="logo.png" alt="Logo" height="80">
+  <a href="https://github.com/Adhenrique12/downloader_bot">
+    <img src="project_assets/logo.png" alt="Logo" height="80">
   </a>
 
   <h3 align="center">Project Description</h3>
