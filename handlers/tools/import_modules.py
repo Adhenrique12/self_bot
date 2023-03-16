@@ -13,5 +13,5 @@ def import_modules(modules, client):
             raise Exception(
                 "Can't have two modules with the same name! Please change one"
             )
-            
-        client.add_event_handler(imported_module.cmd)   
+
+        client.add_event_handler(imported_module.cmd)
