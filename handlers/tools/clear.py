@@ -2,11 +2,11 @@ import os
 
 
 def clear():
-    video = list(filter(lambda x: x.endswith(".mp4"), os.listdir(".")))
-    if video:
-        video = video[0]
-        os.remove(video)
-        print("The file has been deleted successfully")
+    videos = list(filter(lambda f: ".mp4" in f or ".webm" in f, os.listdir()))
+    if videos:
+        for video in videos:
+            os.remove(video)
+            print("The file has been deleted successfully")
 
     if os.path.exists("output.png"):
         os.remove("output.png")

@@ -2,7 +2,7 @@ from telethon import events
 from telethon.tl.types import DocumentAttributeVideo
 import ffmpeg
 from ffmpy import FFmpeg
-from handlers.tools import soup, convert_size, download_video, clear
+from handlers.tools import soup, convert_size, download_video, clear, convert_video
 import os
 from random import randint
 
@@ -54,7 +54,13 @@ async def cmd(event):
 
         download_video.download_video_ydl(link_soup)
 
-        video = list(filter(lambda x: x.endswith(".mp4"), os.listdir(".")))[0]
+
+        video = list(filter(lambda f: ".mp4" in f or ".webm" in f, os.listdir()))[0]
+
+        if video.endswith(".webm"):
+            convert_video.convert_video(video)
+            video = list(filter(lambda x: x.endswith(".mp4"), os.listdir(".")))[0]
+
 
         info = ffmpeg.probe(video)["streams"]
         height = info[0]["coded_height"]
