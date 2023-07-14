@@ -11,9 +11,10 @@ telethon = "^1.27.0"
 ffmpy = "^0.3.0"
 bs4 = "^0.0.1"
 requests = "^2.28.2"
-yt-dlp = "^2023.3.4"
+yt-dlp = "^2023.7.6"
 toml = "^0.10.2"
 ffmpeg-python = "^0.2.0"
+moviepy = "^1.0.3"
 
 
 [build-system]

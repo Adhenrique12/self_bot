@@ -56,10 +56,13 @@ async def cmd(event):
 
 
         video = list(filter(lambda f: ".mp4" in f or ".webm" in f, os.listdir()))[0]
+        
 
         if video.endswith(".webm"):
             convert_video.convert_video(video)
             video = list(filter(lambda x: x.endswith(".mp4"), os.listdir(".")))[0]
+        
+        video = video[0:]
 
 
         info = ffmpeg.probe(video)["streams"]

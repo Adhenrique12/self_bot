@@ -18,11 +18,13 @@ def link_video(link: str):
     for link in links:
         match link:
             case "motherless":
+                print("Motherless")
                 links = soup.find_all("source")
                 link_video_to_download = links[0].get("src")
                 return link_video_to_download
 
             case "hotleak":
+                print("HotLeak")
                 links = soup.find_all("div", {"class": "light-gallery-item"})[0][
                     "data-video"
                 ]
